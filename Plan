@@ -1,0 +1,31 @@
+electronics project 1 - gamepad
+
+objective: make a universal USB gamepad.
+
+detailed objectives:
+make a gamepad with standard # of buttons (4 left, 4 right, 2 joysticks, 2 shoulders)
+design/manufacture PCB to fit in gamepad housing
+develop HID driver to use gamepad over USB
+
+success criterion:
+plays games
+passes smell test
+
+reason for undertaking this project:
+develop knowledge of MCU dev/programming, circuit design/manufacturing, HID drivers, hardware design
+build up to pspi or similar larger embedded projects - learning just the (simplest) physical input portion, leave other aspects (audio handling, display handling, etc) for later
+
+stages:
+technical prototyping (arduino stage)
+  using atmega32u4-based Arduino (I chose a knockoff Pro Micro), connect correct # of buttons/joysticks, get input
+  develop HID driver, use it
+device design
+  design PCB (arduino minus unnecessary shit plus inputs)
+  design enclosure
+  3d print dead mockups
+  3d print, build working mockup
+finalize design
+  physical prototyping
+  manufacture PCB (china)
+  manufacture housing (3d print or order)
+  put it all together
